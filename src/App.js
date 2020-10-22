@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './App.css';
 import Porftolio from './components/Portfolio';
 
 import './assets/css/main.css'

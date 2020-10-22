@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -29,66 +24,26 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
+/* end of reset */
 
 /* Basic */
 
 	html {
 		box-sizing: border-box;
-		/* Mine below */
+		/* `` Mine below ``*/
 		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
-		box-sizing: inherit;
+		box-sizing: inherit;	
 	}
 
-	body {
+
+	/* body {
 		padding-top: 3.5em;
-	}
+	} */
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -97,7 +52,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+		} */
 
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
@@ -117,7 +72,8 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color:  rgba(0, 255, 255, 0.931) !important;
+			text-shadow: 3px 5px 5px rgb(0, 42, 42);
 		}
 
 		a img {
@@ -125,31 +81,32 @@ input, select, textarea {
 		}
 
 	b, strong {
-		font-weight: 600;
-		color: #3e3e3e;
+		font-weight: 700;
+		color: #2a0606;
+		text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.116); 
 	}
 
-	i, em {
+	/* i, em {
 		font-style: italic;
-	}
+	} */
 
-	sub {
+	/* sub {
 		position: relative;
 		top: 0.5em;
 		font-size: 0.8em;
-	}
+	} */
 
-	sup {
+	/* sup {
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
-	}
-
+	} */
+/* 
 	blockquote {
 		border-left: solid 0.75em #eee;
 		padding: 1em 0 1em 1.5em;
 		font-style: italic;
-	}
+	} */
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
@@ -189,17 +146,17 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	br.clear {
+	/* br.clear {
 		clear: both;
-	}
+	} */
 
 	hr {
 		border: 0;
 		border-top: solid 1px #444;
 		border-top-color: rgba(0, 0, 0, 0.35);
 		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
-		height: 1px;
-		margin: 3em 0;
+		/* height: 1px; */
+		/* margin: 3em 0; */
 	}
 
 	p, ul, ol, dl, table {
@@ -224,6 +181,21 @@ input, select, textarea {
 		}
 
 /* Container */
+/* border max width */
+#borderLeft {
+	margin-top: 160px;
+	border-left: 2px solid rgb(4,137,138);
+	position: relative;
+	height: 20vh;
+	padding-top: 500px;
+	border-left-width: 3px;
+
+  }
+
+  .box.style2{
+	max-width: 32em;
+  }
+  
 
 	.container {
 		margin: 0 auto;
@@ -245,17 +217,44 @@ input, select, textarea {
 					width: 900px;
 				}
 
+				#borderLeft {
+					margin-top: 160px;
+					border-left: 2px dotted rgb(4,137,138);
+					position: relative;
+					height: 20vh;
+					padding-top: 500px;
+					border-left-width: 3px;
+				
+				  }
+				  
+				  .box.style2{
+					max-width: 32em;
+				  }
+				  
+
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: 960px;
+				/* width: 960px; */
+				width: 100%;
 			}
 
 				.container.medium {
 					width: 720px;
 				}
+
+				#borderLeft {
+					margin-top: 130px;
+					border-left: 2px dotted rgba(5, 131, 131, 0.52);
+					position: relative;
+					height: 20vh;
+					padding-top: 500px;
+					border-left-width: 3px;
+				
+				  }
+				  
 
 		}
 
@@ -269,6 +268,15 @@ input, select, textarea {
 					width: 75%;
 				}
 
+				#borderLeft {
+					margin-top: 100px;
+					border-left: 2px dotted rgba(5, 131, 131, 0.5);
+					position: relative;
+					height: 20vh;
+					padding-top: 500px;
+					border-left-width: 3px;
+				
+				  }
 		}
 
 		@media screen and (max-width: 736px) {
@@ -281,6 +289,16 @@ input, select, textarea {
 				.container.medium {
 					width: 100%;
 				}
+
+				#borderLeft {
+					margin-top: 100px;
+					border-left: 2px dotted rgb(5, 131, 131);
+					position: relative;
+					height: 20vh;
+					padding-top: 300px;
+					border-left-width: 3px;
+				
+				  }			  
 
 		}
 
@@ -307,6 +325,13 @@ input, select, textarea {
 
 		.row.aln-center {
 			justify-content: center;
+			width: 100%;
+			box-shadow: 11px 15px 12px 0px rgba(3, 51, 51, 0.048);	
+		}
+/* Addition */
+		.row.aln1-center{
+			width: 100%;
+			box-shadow: 19px 15px 12px 0px rgba(3, 51, 51, 0.048);	
 		}
 
 		.row.aln-right {
@@ -355,6 +380,13 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
+		}
+		.row > .col-4Skills{
+			width: 100%;
+		}
+		
+		.row > .col-4work {
+			width: 43.33333%;
 		}
 
 		.row > .off-4 {
@@ -534,6 +566,13 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+			}
+
+			.row > .col-6-medium {
+				width: 40%;
+			}
+			.row > .col-12-smallSkills {
+				width: 100%;
 			}
 
 				.row > * {
@@ -769,6 +808,7 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 50px;
 						}
+
 
 		}
 
@@ -1023,7 +1063,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: stretch;	
 			}
 
 				.row > * {
@@ -1104,6 +1144,10 @@ input, select, textarea {
 
 				.row > .col-6-medium {
 					width: 50%;
+				}
+
+				.row > .col-6-mediumSkills {
+					width: 100%;
 				}
 
 				.row > .off-6-medium {
@@ -1507,6 +1551,7 @@ input, select, textarea {
 
 		}
 
+
 /* Form */
 
 	form label {
@@ -1668,10 +1713,6 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
-		background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 		-moz-transition: background-color .2s ease-in-out;
 		-webkit-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
@@ -1679,17 +1720,20 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		color: #fff !important;
+		color: rgba(27, 0, 0, 0.876) !important;
 		text-decoration: none;
 		font-weight: 700;
 		border: 0;
 		outline: 0;
 		cursor: pointer;
 		border-radius: 8px;
-		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		/* Addition */
+		background-image: radial-gradient(circle, #34ffff, #062529b6);
+		box-shadow: 1px 10px 15px 3px #002a2a;		
+		text-shadow: 1px 2px 3px rgba(149, 255, 255, 0.445);
+		
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1700,8 +1744,11 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			/* background-color: #43bff0; */
 			color: #fff !important;
+			/* Addition */
+			box-shadow: 1px 1px 22px 3px #00ffff;		
+			background-image: radial-gradient(circle, #34ffff, #062529b6);
 		}
 
 		input[type="button"]:active,
@@ -1799,10 +1846,6 @@ input, select, textarea {
 			}
 
 				ul.social li a:before {
-					background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 					-moz-transition: background-color .2s ease-in-out;
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
@@ -1924,7 +1967,7 @@ input, select, textarea {
 	}
 
 		.box.style1 {
-			padding: 3em 2em 3.5em 2em;
+			/* padding: 3em 2em 3.5em 2em; */
 		}
 
 			.box.style1 h3 {
@@ -1956,20 +1999,22 @@ input, select, textarea {
 	}
 
 		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
+			/* -moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
 			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			text-transform: none !important; */
+			/* font-family: 'Font Awesome 5 Free'; */
+			font-family: 'Font Awesome 5 Brands';
+			/* font-weight: 400; */
 		}
 
 		.icon:before {
-			font-size: 1.25em;
+			/* Additions */
+			/* font-size: 5.25em; */
 		}
 
 		.icon > .label {
@@ -1982,23 +2027,90 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			/* ADDITION */
+			color: rgb(0, 29, 29);
 			display: block;
-			margin: 0 0 1.5em 0;
+			/* margin: 0 0 1.5em 0; */
 			cursor: default;
+			text-shadow: 2px 5px 4px rgba(0, 95, 95, 0.781); 
 		}
 
-			.icon.featured:before {
-				font-size: 6em;
+		.icon.featured:before {
+			font-size: 7em;
+		}
+
+	/* Addition */
+
+/* Skill 1 */
+			.html:before{
+				content:"\f13b"
 			}
+
+
+/* Skill 2 */
+			.css:before{
+				content:"\f13c"
+			}
+
+/* skill 3 */
+
+			.js:before{
+				content:"\f3b8"
+			}
+			
+/* skill 4*/
+			.node:before{
+				content:"\f419"
+			}
+
+/* skill 5*/
+			.react:before{
+				content:"\f41b"
+			}
+
+/* skill 6*/
+			.less:before{
+				content:"\f41d"
+			}
+
+			.gitflow:before{
+				content:"\f3e2"
+			}
+
+/* skill 7*/
+			.redux, .styled-components, .express{
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			
+			.coreSkills{
+				/* box-shadow: 19px -15px 12px 0px rgba(3, 51, 51, 0.048);	 */
+				text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075); 
+				color: rgba(41, 4, 4, 0.719);
+				font-size: 1.5rem;
+				font-weight: 600;
+				padding-bottom: 3%;
+	
+			}
+
+			/* .coreSkills1{
+				font-size: 1.5rem;
+				font-weight: 600;
+				padding: 3%;
+				color: rgba(41, 4, 4, 0.719);
+				box-shadow: 19px -15px 12px 0px rgba(3, 51, 51, 0.048);	
+				text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075); 
+			} */
+			
 
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
@@ -2017,6 +2129,7 @@ input, select, textarea {
 		.wrapper.style3 {
 			background-color: #f4f4f4;
 			text-shadow: 1px 1px 0px #fff;
+			display: flex;
 		}
 
 		.wrapper.style4 {
@@ -2027,6 +2140,7 @@ input, select, textarea {
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
 				color: #fff;
+				text-shadow: -3px 3px 2px #181818;
 			}
 
 			.wrapper.style4 form input[type=text],
@@ -2118,6 +2232,10 @@ input, select, textarea {
 	#top {
 		padding: 10em 0 10em 0;
 		text-align: left;
+		
+		/* ADDITION */     
+		background-image: radial-gradient(circle,white ,  rgb(96, 147, 177) ,rgb(113, 96, 177));
+		background-image: radial-gradient(circle, #04adad, #062529);
 	}
 
 		#top .image {
@@ -2125,19 +2243,37 @@ input, select, textarea {
 			width: 20em;
 			height: 20em;
 			margin: 0;
+			/* Addition */
+			box-shadow: -30px 10px 60px 2px rgb(1, 27, 27);	
+			border: dashed 5px rgba(29, 168, 168, 0.137);	
+
 		}
 
 			#top .image img {
 				border-radius: 100%;
+				box-shadow: -5px 0px 20px 5px rgba(3, 51, 51, 0.8);	
+				border: dashed 5px rgba(29, 168, 168, 0.466);	
 			}
 
 		#top h1 {
 			margin-top: 0.35em;
+			/* addition */
+			color: rgba(41, 4, 4, 0.733);
+			padding: 4%;
+			font-weight: 600;
+			box-shadow: 19px -15px 12px 0px rgba(3, 51, 51, 0.048);	
+			text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075); 
 		}
 
 		#top p {
 			font-size: 1.5em;
 			line-height: 1.75em;
+			/* Addition */
+			color: rgba(41, 4, 4, 0.726);
+			font-weight: 700;
+			
+			text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.041); 
+			box-shadow: 19px 15px 12px 0px rgba(3, 51, 51, 0.548);	
 		}
 
 			#top p a {
@@ -2148,43 +2284,82 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
-/* Copyright */
-
-	#copyright {
-		color: #666;
-		font-size: 1em;
-		line-height: 1em;
-		list-style: none;
-		padding-left: 0;
-		margin-bottom: 0;
+	/* ADDITION */
+	#work{
+		box-shadow: 1px 1px 2px 2px rgba(21, 128, 128, 0.8);		
+		box-shadow: 1px 1px 2px 2px rgba(2, 39, 39, 0.8);	
+		background-image: radial-gradient(circle,white ,  rgb(96, 147, 177) ,rgb(113, 96, 177));
+		background-image: radial-gradient(circle, #04adad, #062529);	
 	}
 
-		#copyright li {
-			display: inline-block;
-			border-left: solid 1px rgba(0, 0, 0, 0.5);
-			box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
-			padding: 0 0 0 1em;
-			margin: 0 0 0 1em;
-		}
+	#work h2, #work p{
+		/* Addition */
+		color: rgba(41, 4, 4, 0.651);
+		font-weight: 700;
+		text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.041); 
+	}
 
-			#copyright li:first-child {
-				border: 0;
-				box-shadow: none;
-				padding-left: 0;
-				margin-left: 0;
-			}
+	#work h3{
+		font-size: 1.2rem;
+		color: rgba(41, 4, 4, 0.863);
+		text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.041); 
+	}
 
-		#copyright a {
-			-moz-transition: color .2s ease-in-out;
-			-webkit-transition: color .2s ease-in-out;
-			-ms-transition: color .2s ease-in-out;
-			transition: color .2s ease-in-out;
-			color: inherit;
-		}
+	#work .box{
+		box-shadow: 0px 0px 20px 8px rgba(2, 39, 39, 0.8);	
+		background-image: radial-gradient(circle, #02ffff,#009797, #062529);	
+		text-shadow: 5px 8px 2px rgba(255, 255, 255, 0.075); 
+	}
 
-			#copyright a:hover {
-				color: #777;
-			}
+	#portfolio{
+		box-shadow: 1px 1px 2px 2px rgba(21, 128, 128, 0.8);		
+		background-image: radial-gradient(circle, #04adad, #062529);
+	}
+
+	
+	#portfolio h2, #portfolio p,#portfolio a{
+		color: rgba(41, 4, 4, 0.719);
+		font-weight: 700;
+		text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.041); 
+	}
+
+	#portfolio .image {
+		box-shadow: 0px 2px 6px 1px rgba(0, 27, 27, 0.664);	
+	}
+
+
+	#portfolio .box{
+		box-shadow: 0px 0px 20px 8px rgba(2, 39, 39, 0.8);	
+		background-image: radial-gradient(circle, #02ffff,#009797, #062529);	
+	
+		text-shadow: 5px 8px 2px rgba(255, 255, 255, 0.075); 
+		box-shadow: -5px 5px 25px 15px rgb(3, 51, 51);	
+	}
+
+	#portfolio .box:hover{
+		/* border: outset 3px rgba(0, 255, 255, 0.466); */
+		box-shadow: 3px 0px 36px 20px rgba(0, 206, 206, 0.664);	
+	}
+
+
+	.email{
+		display: flex;
+		/* justify-content: space-evenly; */
+		width: 60%;
+		font-size: 1rem;
+		
+	}
+	.email h4{
+		padding-right: 4%;
+	}
+
+	.email a{
+		color:  rgba(0, 255, 255, 0.931) !important;
+		text-shadow: 3px 5px 5px rgb(0, 42, 42);
+		text-decoration: none;
+		font-size: .9rem;
+	}
+
 
 /* Large */
 
@@ -2193,7 +2368,7 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				font-size: 11pt;
+				/* font-size: 11pt; */
 			}
 
 			input, textarea, select {
@@ -2219,7 +2394,7 @@ input, select, textarea {
 		/* Articles */
 
 			#top {
-				padding: 8em 0;
+				/* padding: 8em 0; */
 			}
 
 				#top .image {
@@ -2227,6 +2402,12 @@ input, select, textarea {
 					height: 24em;
 					margin: 0;
 				}
+
+				#portfolio .box:hover{
+					/* border: outset 2px rgba(0, 255, 255, 0.466); */
+					box-shadow: 3px 0px 36px 20px rgba(0, 206, 206, 0.664);	
+				}
+				
 
 	}
 
@@ -2244,7 +2425,40 @@ input, select, textarea {
 				#top .image {
 					margin: 0 auto 2em auto;
 				}
+			
+				/* #portfolio p{
+					font-size: 1rem;
+					color: rgba(255, 255, 255, 0.74);
+				}	
+				#portfolio h3{
+					font-size: 1rem;
+					color: rgba(63, 1, 1, 0.74);
+					font-weight: 900;
+					text-shadow: 0px 2px 2px rgba(0, 36, 36, 0.349);	
 
+				}	 */
+
+				#portfolio h2{
+					/* font-size: 1.3rem;
+					color: rgba(255, 255, 255, 0.74);
+					text-shadow: 0px 2px 2px rgba(0, 206, 206, 0.349);	 */
+				}
+
+				.icon:before{
+					/* display: none; */
+				}
+				.icon.featured{
+					/* box-shadow: 19px -15px 12px 0px rgba(3, 51, 51, 0.048);	 */
+					/* text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075);  */
+					/* color: rgba(41, 4, 4, 0.719); */
+					/* font-size: 1.2rem; */
+					/* font-weight: 700; */
+					/* padding-bottom: 3%;
+					text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075); */
+				}
+
+
+	
 	}
 
 /* Small */
@@ -2254,17 +2468,17 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				padding-top: 44px;
+				padding-top: 14px;
 			}
 
 			body, input, textarea, select {
 				line-height: 1.75em;
-				font-size: 10pt;
+				font-size: 11pt;
 				letter-spacing: 0;
 			}
 
 			h1, h2, h3, h4, h5, h6 {
-				font-size: 1.25em;
+				/* font-size: 1.25em; */
 				margin: 0 0 0.4em 0;
 			}
 
@@ -2427,42 +2641,62 @@ input, select, textarea {
 				}
 
 				#top p {
-					font-size: 1em;
+					font-size: 1.3em;
 				}
 
 			#contact footer {
 				margin: 0;
 			}
 
-		/* Copyright */
-
-			#copyright {
-				font-size: 1em;
-				margin: 0;
+/* Addition */
+			.email{
+				font-size: .8rem;
 			}
 
-				#copyright li {
-					display: block;
-					margin: 1em 0 0 0;
-					padding: 0;
-					box-shadow: none;
-					border-left: 0;
-				}
 
-					#copyright li:first-child {
-						margin-top: 0;
-					}
+			.icon:before{
+				/* display: none; */
+			}
+			.icon.featured{
+				/* box-shadow: 19px -15px 12px 0px rgba(3, 51, 51, 0.048);	 */
+				/* text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075);  */
+				/* color: rgba(41, 4, 4, 0.719); */
+				font-size: .5rem;
+				/* font-weight: 700; */
+				/* padding-bottom: 3%;
+				text-shadow: 5px 8px 2px rgba(0, 5, 5, 0.075); */
+			}
 
+			#work h3{
+				font-size: 1rem;
+			}
 	}
 
 	/* ```````Moja praca? ````` */
 
 	.parallax{
 		  /* The image used */
-		  background-image: url("../../images/photo-1431492299426-2ea1ce429cc0.jpg");
-
+		  /* background-image: url("../../images/water-with-bubbles.jpeg"); */
+		  /* background-image: url("../../images/c042aaab275ea954bc4ed551e6d99dc9.jpg"); */
+		  /* background-image: url("../../images/underwater_heavy_big_wave_body_surfing.jpg"); */
+		  /* background-image: url("../../images/photo-1568320674602-27305f76a498.jfif"); */
+		  /* background-image: url("../../images/photo-1489393369558-aef701e3dd30.jpg"); */
+		  /* background-image: url("../../images/ocean_waves_ios_stock_5k-2560x1440.jpg"); */
+		  /* background-image: url("../../images/capture-moment-summer-nature.jpg"); */
+		  /* background-image: url("../../images/1151429.jpg"); */
+		  /* background-image: url("../../images/14782-water-ocean-waves.jpg"); */
+		  /* background-image: url("../../images/96fb6173b7709cb6f3f272ce2fafb3ca.jpg"); */
+		  /* background-image: url("../../images/11.jpg"); */
+		  /* background-image: url("../../images/3_CATERS_CATERS_UNDERWATER_SURFING_5.jpg"); */
+		  
+		  /* background-image: url("../../images/bluewateraquaturquoiseseaunderwaterazureoceantealskycalm-underwater-ocean-png-1920_1080.png"); */
+		  /* background-image: url("../../images/dd5c30a9e3b0d6b3ed1e935698ff3b36.jpg"); */
+		  background-image: url("../../images/ocean_water_underwater_126683_1920x1080.jpg");
+		  /* background-image: url("../../images/photo-1572284795851-e2c9da37db05.jfif"); */
+		  /* background-image: url("../../images/underwater-energy-storage.jpg"); */
+		  
 		  /* Set a specific height */
-		  min-height: 200px; 
+		  min-height: 400px; 
 
 		    /* Full height */
   /* height: 100%;  */
@@ -2473,3 +2707,21 @@ input, select, textarea {
 		  background-repeat: no-repeat;
 		  background-size: cover;
 	}
+
+
+
+	  .box.style2{
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-between;
+	  }
+ 
+	  .buttonGit{
+		text-decoration: none;
+		border-bottom: 2px dotted rgb(4, 76, 78);
+		padding-bottom: 1%;
+	   }
+
+	  .buttonGit:hover{
+		/* border-bottom: 2px dotted rgb(6, 99, 102); */
+	  }
