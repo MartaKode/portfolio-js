@@ -2528,9 +2528,11 @@ footer, header, hgroup, menu, nav, section {
 			}
 
 /* Addition */
-			.email{
+			 .email {
 				font-size: .8rem;
+				width: 100%;
 			}
+
 
 			.icon.featured{
 				font-size: .5rem;
@@ -2539,6 +2541,12 @@ footer, header, hgroup, menu, nav, section {
 			#work h3{
 				font-size: 1rem;
 			}
+	}
+
+	@media screen and (max-width: 300px) {
+		#nav{
+			font-size: .75rem;
+		}
 	}
 
 	/* ```````Moja praca? ````` */
