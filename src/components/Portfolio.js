@@ -1,6 +1,7 @@
 import { Grow, Fade, Slide, Zoom } from '@material-ui/core';
 import React, { useState } from 'react'
 import Typewriter from 'typewriter-effect';
+import resume from '../images/Marta_Krawczyk_Resume_Lambda_Student.pdf'
 
 function importAll(r) {
 	let images = {};
@@ -52,6 +53,11 @@ const Porftolio = () => {
 							}, 0);
 						}}
 					>Contact</a></li>
+					<li>
+						<a target="blank" href={resume}>
+							Resume
+						</a>
+					</li>
 				</ul>
 			</nav>
 
@@ -368,7 +374,10 @@ const Porftolio = () => {
 						</ul>
 						<hr />
 					</div>
+					<div className='resumeEmail' style={{ display:'flex', justifyContent: 'space-between'}}>
 					<div className='email'><h4>e-mail:</h4> <a>martaalicja113@gmail.com</a> </div>
+					<div className='resume'><a target="blank" href={resume}>Resume</a></div>
+						</div>
 				</div>
 			</article>
 

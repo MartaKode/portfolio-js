@@ -2581,3 +2581,14 @@ footer, header, hgroup, menu, nav, section {
 		border-bottom: 2px dotted rgb(4, 76, 78);
 		padding-bottom: 1%;
 	   }
+
+	.resume a{
+		text-decoration: none;
+		color:  rgba(0, 255, 255, 0.931) !important;
+	}
+
+	.resume a:hover {
+		text-shadow: 3px 5px 5px rgb(0, 42, 42);
+		font-size: 1.1rem;
+		color:rgb(80, 176, 255) !important;
+	}
