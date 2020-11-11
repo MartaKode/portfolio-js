@@ -1,7 +1,7 @@
 import { Grow, Fade, Slide, Zoom } from '@material-ui/core';
 import React, { useState } from 'react'
 import Typewriter from 'typewriter-effect';
-import resume from '../images/Marta_Krawczyk_Resume_Lambda_Student.pdf'
+import resume from '../images/Marta_Krawczyk_Resume_Lambda_Student2.pdf'
 
 function importAll(r) {
 	let images = {};
